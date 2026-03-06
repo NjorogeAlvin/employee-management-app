@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="new-contact.html">New Contact</a>
+            <a href="view-contacts.html">View All Contacts</a>
+        </nav>
+    <form>
+        <h2>Contact Form</h2>
+        <hr>
+        <label for="Id">ID Number</label>
+        <input id="Id" type="number" name="id_number" placeholder="Enter Identification Number">
+        <br>
+        <label for="firstname">Firstname</label>
+        <input id="firstname" type="text" name="firstname" placeholder="Enter First Name">
+        <br>
+        <label for="lastname">Lastname</label>
+        <input id="lastname" type="text" name="lastname" placeholder="Enter Last Name">
+        <br>
+        <label for="Gender">Gender</label>    
+            <label for="male">Male:</label>
+            <input id="male" name="gender" type="radio" value="male">
+            <label for="female">Female:</label>
+            <input id="female" name="gender" type="radio" value="female">
+        <br>
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" name="phone" placeholder="+2547------">
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter Email">
+        <br>
+        <label for="address">Address</label>
+        <input id="address" type="text" name="address" placeholder="Enter Address">
+        <br>
+        <label for="DOB">Date of Birth</label>
+        <input id="DOB" type="date" name="DOB">
+        <br>
+        <label for="pos">Position</label>
+        <select id="pos" name="position">
+            <option>Position 1</option>
+            <option>Position 2</option>
+            <option>Position 3</option>
+            <option>Position 4</option>
+            <option>Position 5</option>
+        </select>
+        <br>
+        <label for="department">Department</label>
+        <input id="department" type="text" name="department" placeholder="Enter Department">
+        <br>
+        <button type="submit">Submit</button>
+    </form>   
+</body>
+</html>
