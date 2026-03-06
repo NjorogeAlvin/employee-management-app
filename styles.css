@@ -36,3 +36,13 @@
 .table{
     margin-left: 200px;
 }
+
+.search_contact{
+    width: 300px;
+    -webkit-transition: width 1.0s ease-in-out;
+    transition: width 1.0s ease-in-out;
+}
+
+.search_contact:focus{
+    width: 120px;
+}
