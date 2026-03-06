@@ -6,6 +6,7 @@
     <title>All Contacts</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/contacts.png">
+    <script src="main.js"></script>
 </head>
 <body>
     <div  class="nav_bar">
@@ -23,18 +24,18 @@
         <table border="1">
             <thead>
                 <tr>
-                    <th>Name</th> <th>Email</th> <th>Phone</th> <th>Department</th> <th>Actions</th>
+                    <th>No.</th> <th>Name</th> <th>Email</th> <th>Phone</th> <th>Department</th> <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>John Doe</td> <td>johndoe@gmail.com</td> <td>+2547000000</td> <td>Manager</td> <td><button type="button">Details</button> <button type="button">Edit</button> <button type="button">Delete</button> </td>
+                    <td>1</td> <td>John Doe</td> <td>johndoe@gmail.com</td> <td>+2547000000</td> <td>Manager</td> <td><button type="button">Details</button> <button type="button" onclick="editAlert()">Edit</button> <button type="button" onclick="deleteConfirm()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td>Jane Doe</td> <td>janedoe@gmail.com</td> <td>+2547000001</td> <td>Assistant Manager</td> <td><button type="button">Details</button> <button type="button">Edit</button> <button type="button">Delete</button> </td>
+                    <td>2</td> <td>Jane Doe</td> <td>janedoe@gmail.com</td> <td>+2547000001</td> <td>Assistant Manager</td> <td><button type="button">Details</button> <button type="button" onclick="editAlert()">Edit</button> <button type="button" onclick="deleteConfirm()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td>John Kamau</td> <td>johnkamau@gmail.com</td> <td>+2547000002</td> <td>Human Resource</td> <td><button type="button">Details</button> <button type="button">Edit</button> <button type="button">Delete</button> </td>
+                    <td>3</td> <td>John Kamau</td> <td>johnkamau@gmail.com</td> <td>+2547000002</td> <td>Human Resource</td> <td><button type="button">Details</button> <button type="button" onclick="editAlert()">Edit</button> <button type="button" onclick="deleteConfirm()">Delete</button> </td>
                 </tr>
             </tbody>
             </table>
