@@ -1,7 +1,12 @@
 function editAlert(){
-    alert('Edit functionality is not implemented yet!');
+    alert('Edit functionality is not implemented yet!')
 }
 
 function deleteConfirm(){
     confirm('Are you sure you want to delete?')
+}
+
+function submitAlert(){
+    alert('Submitted succesfully');
+    location.reload()
 }

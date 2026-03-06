@@ -38,12 +38,55 @@
 }
 
 .search_contact{
-    width: 300px;
+    width: 120px;
     -webkit-transition: width 1.0s ease-in-out;
     transition: width 1.0s ease-in-out;
 }
 
 .search_contact:focus{
-    width: 120px;
+    width: 300px;
 }
 
+#iD{
+    padding: 10px;
+}
+
+#fm{
+    padding: 10px;
+}
+
+#lm{
+    padding: 10px;
+}
+
+#gen{
+    padding: 10px;
+}
+
+#phone{
+    padding: 10px;
+}
+
+#email{
+    padding: 10px;
+}
+
+#address{
+    padding: 10px;
+}
+
+#dob{
+    padding: 10px;
+}
+
+#poS{
+    padding: 10px;
+}
+
+#dep{
+    padding: 10px;
+}
+
+#submit{
+    padding: 10px;
+}

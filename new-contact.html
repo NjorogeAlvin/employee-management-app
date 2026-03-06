@@ -6,6 +6,7 @@
     <title>New Contact</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/contact.png">
+    <script src="main.js"></script>
 </head>
 <body>
     <div  class="nav_bar">
@@ -19,46 +20,67 @@
     <form>
         <h2>Contact Form</h2>
         <hr>
+        <div id="iD">
         <label for="Id">ID Number</label>
         <input id="Id" type="number" name="id_number" placeholder="Enter Identification Number">
-        <br>
+        </div>
+
+        <div id="fm">
         <label for="firstname">Firstname</label>
         <input id="firstname" type="text" name="firstname" placeholder="Enter First Name">
-        <br>
+        </div>
+
+        <div id="lm">
         <label for="lastname">Lastname</label>
         <input id="lastname" type="text" name="lastname" placeholder="Enter Last Name">
-        <br>
+        </div>
+
+        <div id="gen">
         <label for="Gender">Gender</label>    
             <label for="male">Male:</label>
             <input id="male" name="gender" type="radio" value="male">
             <label for="female">Female:</label>
             <input id="female" name="gender" type="radio" value="female">
-        <br>
+        </div>
+
+        <div id="phone">
         <label for="phone">Phone</label>
         <input id="phone" type="tel" name="phone" placeholder="+2547------">
-        <br>
+        </div>
+
+        <div id="email">
         <label for="email">Email</label>
         <input id="email" type="email" name="email" placeholder="Enter Email">
-        <br>
+        </div>
+
+        <div id="address">
         <label for="address">Address</label>
         <input id="address" type="text" name="address" placeholder="Enter Address">
-        <br>
+        </div>
+
+        <div id="dob">
         <label for="DOB">Date of Birth</label>
         <input id="DOB" type="date" name="DOB">
-        <br>
+        </div>
+
+        <div id="poS">
         <label for="pos">Position</label>
         <select id="pos" name="position">
-            <option>Position 1</option>
-            <option>Position 2</option>
-            <option>Position 3</option>
-            <option>Position 4</option>
-            <option>Position 5</option>
+            <option>Manager</option>
+            <option>Assistant Manager</option>
+            <option>Human Resource</option>
+            <option>Worker</option>
         </select>
-        <br>
+        </div>
+
+        <div id="dep">
         <label for="department">Department</label>
         <input id="department" type="text" name="department" placeholder="Enter Department">
-        <br>
-        <button type="submit">Submit</button>
+        </div>
+
+        <div id="submit">
+        <button type="button" onclick="submitAlert()">Submit</button>
+        </div>
     </form>
     </div>   
 </body>
