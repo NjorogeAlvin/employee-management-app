@@ -30,8 +30,10 @@
 }
 
 .form{
-    margin-left: 200px;
+    margin-left: 300px;
+    margin-top: 30px;
 }
+
 
 .table{
     margin-left: 200px;
@@ -90,3 +92,107 @@
 #submit{
     padding: 10px;
 }
+
+.button_detail{
+    background-color: teal;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid teal;
+}
+
+.button_del{
+    background-color: red !important;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid red;
+    color: white;
+}
+
+.button_edit{
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid orange;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td{
+    padding: 10px;
+}
+
+th{
+    background-color: rgb(4, 170, 109);
+}
+
+tr{
+    background-color: lightgray;
+}
+
+#search_button{
+    background-color: greenyellow;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#body_main{
+    background-image: url("images/bg2.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body_new{
+    background-image: url("images/bg1.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body_view{
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+
+#iD label, #fm label, #lm label, #div_phone label, 
+#div_email label, #div_address label, #dob label, 
+#poS label, #dep label {
+    display: inline-block;
+    width: 120px;
+}
+
+#gen label {
+    display: inline;
+    width: auto;
+}
+
+.form input{
+    width: 250px;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+
+#submit button {
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

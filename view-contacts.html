@@ -6,9 +6,8 @@
     <title>All Contacts</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/contacts.png">
-    <script src="main.js"></script>
 </head>
-<body>
+<body id="body_view">
     <div  class="nav_bar">
         <nav>
             <a href="index.html">Home</a>
@@ -19,9 +18,9 @@
         <div class="table">
         <h1>All Contacts</h1>
         <input class="search_contact" type="text" name="search" placeholder="search employees...">
-        <button type="button">search</button>
+        <button type="button" id="search_button">search</button>
         <hr>
-        <table border="1">
+        <table id="view_table" border="1">
             <thead>
                 <tr>
                     <th>No.</th> <th>Name</th> <th>Email</th> <th>Phone</th> <th>Department</th> <th>Actions</th>
@@ -29,16 +28,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td> <td>John Doe</td> <td>johndoe@gmail.com</td> <td>+2547000000</td> <td>Manager</td> <td><button type="button">Details</button> <button type="button" onclick="editAlert()">Edit</button> <button type="button" onclick="deleteConfirm()">Delete</button> </td>
+                    <td>1</td> <td>John Doe</td> <td>johndoe@gmail.com</td> <td>+2547000000</td> <td>Manager</td> <td><button class="button_detail" type="button">Details</button> <button class="button_edit" type="button" onclick="editAlert()">Edit</button> <button class="button_del" type="button" onclick="deleteConfirm()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td>2</td> <td>Jane Doe</td> <td>janedoe@gmail.com</td> <td>+2547000001</td> <td>Assistant Manager</td> <td><button type="button">Details</button> <button type="button" onclick="editAlert()">Edit</button> <button type="button" onclick="deleteConfirm()">Delete</button> </td>
+                    <td>2</td> <td>Jane Doe</td> <td>janedoe@gmail.com</td> <td>+2547000001</td> <td>Assistant Manager</td> <td><button type="button" class="button_detail">Details</button> <button class="button_edit" type="button" onclick="editAlert()">Edit</button> <button class="button_del" type="button" onclick="deleteConfirm()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td>3</td> <td>John Kamau</td> <td>johnkamau@gmail.com</td> <td>+2547000002</td> <td>Human Resource</td> <td><button type="button">Details</button> <button type="button" onclick="editAlert()">Edit</button> <button type="button" onclick="deleteConfirm()">Delete</button> </td>
+                    <td>3</td> <td>John Kamau</td> <td>johnkamau@gmail.com</td> <td>+2547000002</td> <td>Human Resource</td> <td><button class="button_detail" type="button">Details</button> <button class="button_edit" type="button" onclick="editAlert()">Edit</button> <button class="button_del" type="button" onclick="deleteConfirm()">Delete</button> </td>
                 </tr>
             </tbody>
         </table>
         </div>
+        <script src="main.js"></script>
 </body>
 </html>

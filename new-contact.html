@@ -6,9 +6,8 @@
     <title>New Contact</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/contact.png">
-    <script src="main.js"></script>
 </head>
-<body>
+<body id="body_new">
     <div  class="nav_bar">
         <nav>
             <a href="index.html">Home</a>
@@ -18,7 +17,7 @@
     </div>
     <div class="form">
     <form>
-        <h2>Contact Form</h2>
+        <h2>Add New Contact</h2>
         <hr>
         <div id="iD">
         <label for="Id">ID Number</label>
@@ -43,17 +42,17 @@
             <input id="female" name="gender" type="radio" value="female">
         </div>
 
-        <div id="phone">
+        <div id="div_phone">
         <label for="phone">Phone</label>
         <input id="phone" type="tel" name="phone" placeholder="+2547------">
         </div>
 
-        <div id="email">
+        <div id="div_email">
         <label for="email">Email</label>
         <input id="email" type="email" name="email" placeholder="Enter Email">
         </div>
 
-        <div id="address">
+        <div id="div_address">
         <label for="address">Address</label>
         <input id="address" type="text" name="address" placeholder="Enter Address">
         </div>
@@ -83,6 +82,7 @@
         </div>
     </form>
     </div>   
+    <script src="main.js"></script>
 </body>
 </html>
 
