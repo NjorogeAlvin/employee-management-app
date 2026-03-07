@@ -169,14 +169,16 @@ tr{
 
 #iD label, #fm label, #lm label, #div_phone label, 
 #div_email label, #div_address label, #dob label, 
-#poS label, #dep label {
+#poS label, #dep label, #gen label {
     display: inline-block;
     width: 120px;
+    text-align: center;
 }
 
 #gen label {
     display: inline;
     width: auto;
+    padding-left: 25px;
 }
 
 .form input{
