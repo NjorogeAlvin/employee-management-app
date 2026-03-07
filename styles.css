@@ -196,3 +196,6 @@ input[type="radio"]{
     cursor: pointer;
 }
 
+#gen label:first-child {
+    margin-right: 70px;
+}
