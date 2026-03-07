@@ -99,6 +99,7 @@
     border-radius: 10px;
     color: white;
     border: 2px solid teal;
+    font-size: 16px;
 }
 
 .button_del{
@@ -107,6 +108,7 @@
     border-radius: 10px;
     border: 2px solid red;
     color: white;
+    font-size: 16px;
 }
 
 .button_edit{
@@ -115,12 +117,14 @@
     border-radius: 10px;
     color: white;
     border: 2px solid orange;
+    font-size: 16px;
 }
 
 table{
     border-collapse: collapse;
     border: 1px solid;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 th, td{
@@ -200,4 +204,15 @@ input[type="radio"]{
 
 #gen label:first-child {
     margin-right: 70px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.button_detail, .button_edit, .button_del {
+    width: 70px;
 }
