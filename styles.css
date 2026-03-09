@@ -21,6 +21,10 @@
     color: navy;
 }
 
+.nav_bar a.active{
+    background-color: #04AA6D;
+}
+
 .description{
     margin-left: 200px;
 }
