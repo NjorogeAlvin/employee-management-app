@@ -145,6 +145,10 @@ tr{
     border-radius: 10px;
 }
 
+#search_button:hover{
+    background-color: green;
+}
+
 #body_main{
     background-image: url("images/bg2.avif");
     background-repeat: no-repeat;
@@ -194,12 +198,13 @@ input[type="radio"]{
 }
 
 #submit button {
-    background-color: teal;
+    background-color: darkred;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: ease-in-out 0.5s;
 }
 
 #gen label:first-child {
@@ -215,4 +220,9 @@ tr:nth-child(odd) {
 
 .button_detail, .button_edit, .button_del {
     width: 70px;
+}
+
+#submit button:hover{
+    background-color: lightgreen;
+    transition: back;
 }
