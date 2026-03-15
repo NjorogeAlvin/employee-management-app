@@ -25,11 +25,11 @@
     background-color: #04AA6D;
 }
 
-.description{
+#description{
     margin-left: 200px;
 }
 
-.index_head{
+#index_head{
     margin-left: 200px;
 }
 
@@ -143,6 +143,11 @@ tr{
     background-color: lightgray;
 }
 
+tr :hover{
+    background-color: coral;
+    cursor: pointer;
+}
+
 #search_button{
     background-color: greenyellow;
     cursor: pointer;
@@ -229,4 +234,22 @@ tr:nth-child(odd) {
 #submit button:hover{
     background-color: lightgreen;
     transition: back;
+}
+
+#dashboard{
+    margin-left: 200px;
+}
+
+#card_one{
+    display: flex;
+    background-color: aquamarine;
+}
+
+#card_two{
+    display: flex;
+    background-color: green;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
