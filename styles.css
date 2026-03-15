@@ -7,6 +7,11 @@
     left: 0;
     background-color: #111;
     overflow-x: hidden;
+    opacity: 0.75;
+}
+
+#body_main .nav_bar{
+    margin-top: 10.5%;
 }
 
 .nav_bar a{
@@ -29,9 +34,8 @@
     margin-left: 200px;
 }
 
-#index_head{
-    margin-left: 200px;
-}
+/* #index_head{
+} */
 
 .form{
     margin-left: 300px;
@@ -238,11 +242,16 @@ tr:nth-child(odd) {
 
 #dashboard{
     margin-left: 200px;
+    background-color: gray;
 }
 
 #card_one{
     display: flex;
     background-color: aquamarine;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
 }
 
 #card_two{
