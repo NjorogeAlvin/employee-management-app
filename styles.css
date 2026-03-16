@@ -7,11 +7,6 @@
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    opacity: 0.75;
-}
-
-#body_main .nav_bar{
-    margin-top: 10.5%;
 }
 
 .nav_bar a{
@@ -30,12 +25,27 @@
     background-color: #04AA6D;
 }
 
-#description{
+br {
     margin-left: 200px;
 }
 
-/* #index_head{
-} */
+#description {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    width: 60%;
+    margin-left: 220px;
+    padding: 20px;
+    background-color:   green;
+    color: #111;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#index_head {
+    margin-left: 200px;
+    padding: 20px;
+}
 
 .form{
     margin-left: 300px;
@@ -242,23 +252,42 @@ tr:nth-child(odd) {
 
 #dashboard{
     margin-left: 200px;
-    background-color: gray;
+    padding: 20px;
+}
+
+#cards{
+    display: flex;
+    gap: 20px;
+}
+
+#card_one, #card_two {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
 }
 
 #card_one{
-    display: flex;
     background-color: aquamarine;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
 }
 
 #card_two{
-    display: flex;
-    background-color: green;
-    padding: 5px;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
+    background-color: aqua;
 }
+
+#body_main {
+    min-height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#card_one p:first-child, #card_two p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
