@@ -25,8 +25,8 @@
     background-color: #04AA6D;
 }
 
-br {
-    margin-left: 200px;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 #description {
@@ -266,14 +266,18 @@ tr:nth-child(odd) {
     border-radius: 10px;
     flex-direction: column;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
 }
 
 #card_one{
     background-color: aquamarine;
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+   
 }
 
 #card_two{
     background-color: aqua;
+    background: linear-gradient(135deg, aqua, #007a4d);
 }
 
 #body_main {
@@ -291,3 +295,6 @@ tr:nth-child(odd) {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#card_one:hover, #card_two:hover {
+    transform: translateY(-10px);
+}
