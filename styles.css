@@ -298,3 +298,10 @@ tr:nth-child(odd) {
 #card_one:hover, #card_two:hover {
     transform: translateY(-10px);
 }
+
+#index_head img {
+    width: 60px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
