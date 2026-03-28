@@ -362,21 +362,23 @@ tr:nth-child(odd) {
 }
 
 #index_head img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
-    border-radius: 50%; /* Makes the icon circular */
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
     vertical-align: middle;
     margin-right: 15px;
     object-fit: cover;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4)); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #index_head h1 {
     display: flex;
     align-items: center;
     font-weight: 700;
-    color: #111;
+    color: #ffffff !important;
+    letter-spacing: 1px;
 }
-
 #dashboard h2 {
     margin-bottom: 20px;
     color: white;
@@ -411,5 +413,9 @@ tr:nth-child(odd) {
 }
 
 #recent_hires_section {
-    color: #000000 !important; /* Black font */
+    color: #000000 !important;
+}
+
+#recent_hires_section h2 {
+    color: white !important;
 }
