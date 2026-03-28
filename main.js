@@ -131,6 +131,12 @@ function deleteContact(index) {
 }
 
 function updateDashboard() {
+    // Update Date and Time
+    const dateDisplay = document.getElementById('current_date');
+    if (dateDisplay) {
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateDisplay.innerText = new Date().toLocaleDateString(undefined, options);
+    }
     // Define the same hard-coded data used in the table
     const defaultContacts = [
         { name: "John Doe", position: "Manager" },
