@@ -61,13 +61,13 @@ function submitAlert() {
         department: department
     };
 
-    // 3. Get existing contacts from Local Storage or start with an empty array
+    // Get existing contacts from Local Storage or start with an empty array
     let contacts = JSON.parse(localStorage.getItem('contacts')) || [];
 
-    // 4. Add the new contact to the array
+    // Add the new contact to the array
     contacts.push(newContact);
 
-    // 5. Save the updated array back to Local Storage
+    // Save the updated array back to Local Storage
     localStorage.setItem('contacts', JSON.stringify(contacts));
 
     // Success
@@ -77,16 +77,27 @@ function submitAlert() {
 
 function loadContacts() {
     const tableBody = document.querySelector("#view_table tbody");
-    if (!tableBody) return; // Only run on the view-contacts page
+    if (!tableBody) return;
 
-    // Get contacts from Local Storage
-    let contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+    // Moved my Hardcoded data to JS
+    const defaultContacts = [
+        { name: "John Doe", email: "johndoe@gmail.com", phone: "+2547000000", department: "Manager" },
+        { name: "Jane Doe", email: "janedoe@gmail.com", phone: "+2547000001", department: "Assistant Manager" },
+        { name: "John Kamau", email: "johnkamau@gmail.com", phone: "+2547000002", department: "Human Resource" },
+        { name: "James Otieno", email: "jamesotieno@gmail.com", phone: "+2547000003", department: "Supervisor" },
+        { name: "Steve Mwaura", email: "stevemwaura@yahoo.com", phone: "+2547000004", department: "Worker" }
+    ];
 
-    // Clear existing static rows
+    // Get new contacts added via the form from Local Storage
+    let newContacts = JSON.parse(localStorage.getItem('contacts')) || [];
+
+    // Combine both lists (Default + New)
+    const allContacts = [...defaultContacts, ...newContacts];
+
+    // 4. Clear the table and rebuild it
     tableBody.innerHTML = "";
 
-    // Loop through contacts and create table rows
-    contacts.forEach((contact, index) => {
+    allContacts.forEach((contact, index) => {
         let row = `
             <tr>
                 <td>${index + 1}</td>
