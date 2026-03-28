@@ -174,11 +174,11 @@ tr :hover{
     background-color: green;
 }
 
-#body_main{
+/* #body_main{
     background-image: url("images/bg2.avif");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 #body_new{
     background-image: url("images/bg1.avif");

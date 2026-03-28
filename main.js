@@ -165,4 +165,20 @@ function updateDashboard() {
     if (posDisplay) {
         posDisplay.innerText = uniquePositions.size;
     }
+    // Update Recent Hires Table
+    const recentBody = document.getElementById('recent_body');
+    if (recentBody) {
+        recentBody.innerHTML = "";
+        // Take the last 3 contacts added to the array
+        const recentHires = allContacts.slice(-3).reverse(); 
+
+        recentHires.forEach(contact => {
+            let row = `<tr>
+                <td>${contact.name}</td>
+                <td>${contact.position || 'N/A'}</td>
+                <td>${contact.department}</td>
+            </tr>`;
+            recentBody.innerHTML += row;
+        });
+    }
 }
