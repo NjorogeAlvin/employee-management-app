@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
-    backdrop-filter: blur(15px);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     overflow-x: hidden;
 }
@@ -59,6 +58,7 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    
 }
 
 
@@ -189,18 +189,26 @@ tr :hover{
     color: white;
 }
 
-/* #body_new{
-    background-image: url("images/bg1.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
+#body_new {
+    min-height: 100vh;
+    background-color: #1a2a6c;
+    background-image: 
+        radial-gradient(at 40% 20%, hsla(210,100%,30%,1) 0, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(180,100%,20%,1) 0, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(200,100%,25%,1) 0, transparent 50%);
+    background-attachment: fixed;
+    margin: 0;
 }
-
-#body_view{
-    /* background-image: url("images/bg.jpg"); */
-    /* background-repeat: no-repeat;
-    background-size: cover;
-} */ 
-
+#body_view {
+    min-height: 100vh;
+    background-color: #232526;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(180,50%,20%,1) 0, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(200,30%,15%,1) 0, transparent 50%),
+        radial-gradient(at 50% 50%, hsla(220,20%,10%,1) 0, transparent 50%);
+    background-attachment: fixed;
+    margin: 0;
+}
 .form form{
     background-color: white;
     padding: 20px;
@@ -278,7 +286,7 @@ tr:nth-child(odd) {
 #cards {
     margin-left: 240px;
     display: flex;
-    gap: 150px; /* Space between cards */
+    gap: 150px;
     margin-top: 20px;
 }
 #card_one, #card_two {
@@ -372,7 +380,7 @@ tr:nth-child(odd) {
 #dashboard h2 {
     margin-bottom: 20px;
     color: white;
-    border-left: 5px solid #04AA6D; /* Adds a nice green accent bar */
+    border-left: 5px solid #04AA6D;
     padding-left: 15px;
     margin-left: 240px;
     margin-top: 30px;
