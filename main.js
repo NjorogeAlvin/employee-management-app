@@ -3,7 +3,13 @@ function editAlert(){
 }
 
 function deleteConfirm(){
-    confirm('Are you sure you want to delete?')
+    let deleteconfirm = confirm('Are you sure you want to delete?');
+    if(deleteconfirm){
+        alert("Contact deleted successfully");
+    }
+    else{
+        alert("Delete canceled")
+    }
 }
 
 function submitAlert(){

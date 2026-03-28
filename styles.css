@@ -143,6 +143,7 @@ table{
     border: 1px solid;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    margin-left: 3px;
 }
 
 th, td{
@@ -158,7 +159,6 @@ tr{
 }
 
 tr :hover{
-    background-color: coral;
     cursor: pointer;
 }
 
@@ -200,10 +200,11 @@ tr :hover{
 
 #iD label, #fm label, #lm label, #div_phone label, 
 #div_email label, #div_address label, #dob label, 
-#poS label, #dep label, #gen label {
-    display: inline-block;
-    width: 120px;
-    text-align: center;
+#poS label, #dep label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
 }
 
 #gen label {
@@ -228,6 +229,8 @@ input[type="radio"]{
     border-radius: 5px;
     cursor: pointer;
     transition: ease-in-out 0.5s;
+    width: 100px;
+    box-sizing: border-box;
 }
 
 #gen label:first-child {
@@ -253,6 +256,7 @@ tr:nth-child(odd) {
 #dashboard{
     margin-left: 200px;
     padding: 20px;
+    /* display: flex; */
 }
 
 #cards{
@@ -304,4 +308,24 @@ tr:nth-child(odd) {
     height: auto;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+.form input, .form select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#iD, #fm, #lm, #gen, #div_phone, 
+#div_email, #div_address, #dob, #poS, #dep {
+    padding: 8px 10px;
+}
+
+#gen {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 10px;
 }
