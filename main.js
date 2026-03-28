@@ -51,7 +51,65 @@ function submitAlert() {
         return;
     }
 
+    // Create a contact object
+    const newContact = {
+        id: idNumber,
+        name: `${firstname} ${lastname}`,
+        email: email,
+        phone: phone,
+        position: position,
+        department: department
+    };
+
+    // 3. Get existing contacts from Local Storage or start with an empty array
+    let contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+
+    // 4. Add the new contact to the array
+    contacts.push(newContact);
+
+    // 5. Save the updated array back to Local Storage
+    localStorage.setItem('contacts', JSON.stringify(contacts));
+
     // Success
     alert('Submitted successfully!');
     location.reload();
+}
+
+function loadContacts() {
+    const tableBody = document.querySelector("#view_table tbody");
+    if (!tableBody) return; // Only run on the view-contacts page
+
+    // Get contacts from Local Storage
+    let contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+
+    // Clear existing static rows
+    tableBody.innerHTML = "";
+
+    // Loop through contacts and create table rows
+    contacts.forEach((contact, index) => {
+        let row = `
+            <tr>
+                <td>${index + 1}</td>
+                <td>${contact.name}</td>
+                <td>${contact.email}</td>
+                <td>${contact.phone}</td>
+                <td>${contact.department}</td>
+                <td>
+                    <button class="button_detail" type="button">Details</button>
+                    <button class="button_edit" type="button" onclick="editAlert()">Edit</button>
+                    <button class="button_del" type="button" onclick="deleteContact(${index})">Delete</button>
+                </td>
+            </tr>`;
+        tableBody.innerHTML += row;
+    });
+}
+
+// Function to delete a contact
+function deleteContact(index) {
+    if (confirm("Are you sure you want to delete this contact?")) {
+        let contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+        contacts.splice(index, 1); // Remove item at index
+        localStorage.setItem('contacts', JSON.stringify(contacts));
+        loadContacts(); // Refresh the table
+    }
 }
