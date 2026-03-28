@@ -1,3 +1,8 @@
+// const DEFAULT_CONTACTS = [
+//     { name: "John Doe", email: "johndoe@gmail.com", phone: "+2547000000", position: "Manager", department: "Admin" },
+//     // ... rest of your 5 people
+// ];
+
 function editAlert(){
     alert('Edit functionality is not implemented yet!')
 }
@@ -122,5 +127,36 @@ function deleteContact(index) {
         contacts.splice(index, 1); // Remove item at index
         localStorage.setItem('contacts', JSON.stringify(contacts));
         loadContacts(); // Refresh the table
+    }
+}
+
+function updateDashboard() {
+    // Define the same hard-coded data used in the table
+    const defaultContacts = [
+        { name: "John Doe", position: "Manager" },
+        { name: "Jane Doe", position: "Assistant Manager" },
+        { name: "John Kamau", position: "Human Resource" },
+        { name: "James Otieno", position: "Supervisor" },
+        { name: "Steve Mwaura", position: "Worker" }
+    ];
+
+    // Get the new contacts from Local Storage
+    let newContacts = JSON.parse(localStorage.getItem('contacts')) || [];
+
+    // Combine them for the total count
+    const allContacts = [...defaultContacts, ...newContacts];
+
+    // Update Total Employees
+    const empDisplay = document.getElementById('emp-count');
+    if (empDisplay) {
+        empDisplay.innerText = allContacts.length;
+    }
+
+    // Update No. of Positions
+    // This counts unique positions from both the hard-coded and new data
+    const uniquePositions = new Set(allContacts.map(c => c.position));
+    const posDisplay = document.getElementById('pos-count');
+    if (posDisplay) {
+        posDisplay.innerText = uniquePositions.size;
     }
 }
