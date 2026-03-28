@@ -212,7 +212,10 @@ tr :hover{
 #gen label {
     display: inline;
     width: auto;
-    padding-left: 25px;
+    padding-left: 0;
+    font-weight: 600;
+    color: #333;
+    margin-right: 5px;
 }
 
 .form input{
@@ -220,7 +223,9 @@ tr :hover{
 }
 
 input[type="radio"]{
-    width: auto;
+        width: 16px !important;
+    height: 16px;
+    margin-right: 5px;
 }
 
 #submit button {
@@ -328,6 +333,7 @@ tr:nth-child(odd) {
 #gen {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
     padding: 8px 10px;
+    flex-wrap: wrap;
 }
