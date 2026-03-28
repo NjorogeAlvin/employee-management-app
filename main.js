@@ -13,6 +13,20 @@ function deleteConfirm(){
 }
 
 function submitAlert(){
+    let firstname = document.getElementById('firstname').value;
+    let lastname = document.getElementById('lastname').value;
+    let iD = document.getElementById('iD').value;
+    let phone = document.getElementById('phone').value;
+    let email = document.getElementById('email').value;
+    let position = document.getElementById('pos').value;
+    let department = document.getElementById('department').value;
+
+    if (firstname === ''){
+        alert('Please fill in all fields!');
+        return;
+    
+    }
+
     alert('Submitted succesfully');
-    location.reload()
+    location.reload();
 }
