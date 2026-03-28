@@ -48,8 +48,10 @@ body {
 }
 
 .form{
-    margin-left: 300px;
+    margin-left: 200px;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -229,12 +231,12 @@ input[type="radio"]{
     border-radius: 5px;
     cursor: pointer;
     transition: ease-in-out 0.5s;
-    width: 100px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 #gen label:first-child {
-    margin-right: 70px;
+    margin-right: 0;
 }
 
 tr:nth-child(even) {
