@@ -210,9 +210,14 @@ tr :hover{
     margin: 0;
 }
 .form form{
-    background-color: white;
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 20px;
-    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    color: white; 
     width: 600px;
 }
 
@@ -235,8 +240,15 @@ tr :hover{
     margin-right: 5px;
 }
 
-.form input{
-    width: 250px;
+.form input, .form select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+
+.form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 input[type="radio"]{
