@@ -506,3 +506,34 @@ tr:nth-child(odd) {
 #view_table tr:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+#recent_table {
+    width: 95%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05) !important; 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#recent_table tr, 
+#recent_table td {
+    background-color: transparent !important;
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 15px;
+}
+
+#recent_table th {
+    background-color: #04AA6D !important;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+#pos{
+    color: black;
+}
