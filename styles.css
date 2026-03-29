@@ -61,15 +61,47 @@ body {
     
 }
 
+.table {
+    margin-left: 240px;
+    padding: 20px;
+    color: black;
+}
+.table h1{
+    color: white;
+    margin-bottom: 20px;
+}
 
-.table{
-    margin-left: 200px;
+.table th, .table td{
+    border: 1px solid;
+    text-align: left;
+}
+
+.table table{
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#search_button {
+    padding: 10px 20px;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .search_contact{
-    width: 120px;
+    width: 300px;
     -webkit-transition: width 1.0s ease-in-out;
     transition: width 1.0s ease-in-out;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 250px;
 }
 
 .search_contact:focus{
@@ -169,12 +201,6 @@ tr{
 
 tr :hover{
     cursor: pointer;
-}
-
-#search_button{
-    background-color: greenyellow;
-    cursor: pointer;
-    border-radius: 10px;
 }
 
 #search_button:hover{
@@ -430,4 +456,53 @@ tr:nth-child(odd) {
 
 #recent_hires_section h2 {
     color: white !important;
+}
+
+#recent_hires_table {
+    width: 95%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05) !important; 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+#view_table {
+    width: 95%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05) !important; 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#view_table th {
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#view_table td {
+    padding: 12px 15px;
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#view_table tr:nth-child(even), 
+#view_table tr:nth-child(odd) {
+    background-color: transparent !important;
+}
+
+#view_table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
