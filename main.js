@@ -1,4 +1,4 @@
-// 1. DATA MANAGEMENT: Consistent helper for all functions
+// DATA MANAGEMENT: Consistent helper for all functions
 function getAllContacts() {
     const defaultContacts = [
         { name: "John Doe", email: "johndoe@gmail.com", phone: "+2547000000", position: "Manager", department: "Admin" },
@@ -11,7 +11,7 @@ function getAllContacts() {
     return [...defaultContacts, ...newContacts];
 }
 
-// 2. DASHBOARD LOGIC: Fix for counts and Recent Hires table
+// DASHBOARD LOGIC: Fix for counts and Recent Hires table
 function updateDashboard() {
     // Set Current Date
     const dateDisplay = document.getElementById('current_date');
